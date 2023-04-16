@@ -1,7 +1,10 @@
-@media screen and (max-width: 768px) {  
-    .custom-bar{
-            display:block;
-    }  
+@media screen and (max-width: 766px) {  
+    .userinfobox{
+      display: none;
+    }
+    .biguserbox{
+      margin-bottom: 2rem;
+    }
 }
 @media screen and (max-width: 982px) {  
   #xdrow{
@@ -11,12 +14,16 @@
     width:100%;
     float:right;
   }
-  
 }
-@media screen and (max-width: 1746px) {  
+@media screen and (max-width: 1650px) {  
 
+  .homepagepimg{
+    display: block !important;
+    float: none !important;
+    margin:auto !important;
+  }
   .homepusername{
-    display: block;
+    text-align: center;
   }
   
 }
@@ -76,11 +83,12 @@
     position: relative;
     width: 10%;
     top: -65px;
+    right: -15px;
 }
 .homepagepimg{
   width: 6rem;
   height: 6rem;
-  float: left;
+  float:left;
 }
 .homepagepimg max-width{
   width: 6rem;

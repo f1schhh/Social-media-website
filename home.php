@@ -6,7 +6,7 @@
     <title><?php echo $wconf->websitename; ?></title>
     <?php echo $wconf->cssfiles; ?>
 </head>
-<body class="">
+<body>
 <?php echo $wconf->incsvgs; ?>
 <!----- MENYBAR ------>
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -15,36 +15,20 @@
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Hem</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Evenemang</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Grupper</a>
-        </li>
-      </ul>
-      <form class="d-flex">
-        <input class="form-control me-2" type="search" placeholder="Sök" aria-label="Search">
-        <button class="btn bg-primary text-white" type="submit">Sök</button>
-      </form>
-    </div>
+    <?php echo $wconf->navbar; ?>
   </div>
 </nav>
 <div class="one-vr"></div>
 <!-------- FIRST CONTAINER ------>
 <div class="container-fluid">
   <div class="row">
-    <div class="col-md-2">
+    <div class="col-md-2 biguserbox">
     	<div class="card">
-      	<div class="card-body">
+      	<div class="card-body userinfobox">
       <img src="https://vignette.wikia.nocookie.net/great-characters/images/8/8a/8481862A-EC6E-41F8-A573-CCA2C5BC1B80.png" class="rounded-circle homepagepimg img-fluid"> <p class="fs-6 homepusername"> Adam Fischer<br />
         @adamfischeer
       </p>
-</div>
+   </div>
 <div class="list-group list-group-flush">
   <a href="#" class="list-group-item list-group-item-action">Inkorg</a>
   <a href="#" class="list-group-item list-group-item-action">Inställningar</a>
@@ -53,7 +37,7 @@
 </div>
 </div>
     </div>
-    <div class="col-md-8 content-center">
+    <div class="col-md-10 content-center">
     <button class="btn btn-primary btn-sm" style="float:right;">Posta ett inlägg</button>
       <h4>Inlägg</h4>
       <div class="card">
@@ -91,10 +75,10 @@
 <!----- Post 3 -------------> 
 <div class="card" style="width:auto;">
       	<div class="card-body">
-      <img src="https://vignette.wikia.nocookie.net/great-characters/images/8/8a/8481862A-EC6E-41F8-A573-CCA2C5BC1B80.png" alt="mdo" class="rounded-circle" style="float:left;" width="32" height="32"> <p class="fst-italic fw-bold text-sm-start">Ichibans bajstoa - 16 April 19:28</p>
+      <img src="https://vignette.wikia.nocookie.net/great-characters/images/8/8a/8481862A-EC6E-41F8-A573-CCA2C5BC1B80.png" alt="mdo" class="rounded-circle" style="float:left;" width="32" height="32"> <p class="fst-italic fw-bold text-sm-start">Ichiban - 16 April 19:28</p>
 
       <p class="text-start">
-      	Är du helt ichad?
+      	Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
       	<div class="form-check">
   <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
   <label class="form-check-label" for="exampleRadios1">
@@ -129,13 +113,13 @@
 
       <p class="text-start">
 
-        Kolla detta lol <br />
+        KLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. <br />
         <img src="https://media4.giphy.com/media/11z1Exkm83QWt2/giphy.gif?cid=ecf05e47n9xkxwizsmbw2pthpwn55v38nv7au1ov8uobni87&rid=giphy.gif&ct=g" class="img-fluid n" /> 
       </p>
 
       <div class="mb-6">
-      <label for="exampleFormControlTextarea1" class="form-label"></label>
-       <textarea class="form-control form-control-sm" id="exampleFormControlTextarea1" rows="1" cols="2" placeholder="Kommentera..."></textarea>
+      <label for="example" class="form-label"></label>
+       <textarea class="form-control form-control-sm" id="example" rows="1" cols="2" placeholder="Kommentera..."></textarea>
        <input type="submit" class="btn btn-primary btn-sm" style="margin-top: 5px;" value="Kommentera" />
    </p>
 </div>
@@ -151,7 +135,7 @@
 
       <p class="text-start">
 
-        Vad tror ni om matchen på lördag mot Crystal palace? Själv ska jag ta mig 2 bärs och kolla med några kompisar och hoppas självklart på en go jävla vinst. Men först blir det att kolla Manchester City mot Liverpool <br />
+       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. <br />
         <br />
         <img src="https://media0.giphy.com/media/DGBhsKsgz6UUUVaHQR/giphy.gif?cid=ecf05e4738p33obn71pw0fpoappl0nv31i63awwqtsfm6qav&rid=giphy.gif&ct=g" class="img-fluid n" /> 
       </p>
@@ -190,20 +174,6 @@
 <!----- Post 5 end ---------->
 
 </div>
-<!--------Third sections --------->
- <div class="col-md-2">
-    <div class="card">
-      <div class="card-body">
-        <h5 class="card-title">Statistik</h5>
-        <hr />
-      <p class="card-text">Antal användare: <strong>1</strong></p>
-      <p class="card-text">Antal inlägg: <strong>20</strong></p>
-      <p class="card-text">Antal kommentarer: <strong>50</strong></p>
-      <p class="card-text">Antal grupper: <strong>50</strong></p>
-     </div>
-  </div>
-</div>
-<!----------End of third section------->
 <div class="one-vr"></div>
 <!-----------FOOTER----------->
 <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top mt-auto">
@@ -216,11 +186,10 @@
 
     <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
       <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"></use></svg></a></li>
-      <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"></use></svg></a></li>
-      <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"></use></svg></a></li>
     </ul>
   </footer>
 <!-----------End of FOOTER----------->
-    <script src="/docs/5.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
-  </body>
+<!---- Javascript filer ----->
+<?php echo $wconf->jsfiles; ?>
+</body>
 </html>

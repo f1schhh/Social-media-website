@@ -1,2 +1,1 @@
-# Football-Social-Media-Website
- An social media website for football
+# Social media website as school project

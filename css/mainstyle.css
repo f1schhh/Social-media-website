@@ -3,6 +3,16 @@
             display:block;
     }  
 }
+@media screen and (max-width: 982px) {  
+  #xdrow{
+    display:none;
+  }
+  #kingen{
+    width:100%;
+    float:right;
+  }
+  
+}
 .bd-placeholder-img {
     font-size: 1.125rem;
     text-anchor: middle;

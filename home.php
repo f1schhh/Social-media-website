@@ -1,4 +1,4 @@
-<?php require('inc/main.inc.php'); ?>
+<?php require_once('inc/main.inc.php'); ?>
 <!doctype html>
 <html lang="en">
   <head>
@@ -14,7 +14,7 @@
       <!-- Dark mode styles -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.4.1/darkly/bootstrap.min.css">
   </head>
-  <body class="bg">
+<body class="bg d-flex flex-column min-vh-100">
 
   	<!------ SVGS------->
 
@@ -34,7 +34,7 @@
   </symbol>
 </svg>
 <!----- MENYBAR ------>
-  	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">Poggers</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -59,12 +59,11 @@
     </div>
   </div>
 </nav>
-<br />
-
+<div class="one-vr"></div>
 <!-------- FIRST CONTAINER ------>
 <div class="container-fluid">
   <div class="row">
-    <div class="col-2">
+    <div class="col-md-auto">
     	<div class="card">
       	<div class="card-body">
       <img src="https://vignette.wikia.nocookie.net/great-characters/images/8/8a/8481862A-EC6E-41F8-A573-CCA2C5BC1B80.png" alt="mdo" class="rounded-circle" style="float:left;" width="48" height="48"> <p class="fs-5" style="padding-top: 10px; padding-right: 10px;">Yoshi Yoshisson</p>
@@ -75,11 +74,9 @@
   <a href="profile.php" class="list-group-item list-group-item-action"> Min profil</a>
   <a href="#" class="list-group-item list-group-item-action">Mina grupper</a>
 </div>
-
-
 </div>
     </div>
-    <div class="col-6 content-center">
+    <div class="col-md-8 content-center">
     <button class="btn btn-primary btn-sm" style="float:right;">Posta ett inlägg</button>
       <h4>Inlägg</h4>
       <div class="card">
@@ -115,7 +112,7 @@
 <br />
 
 <!----- Post 3 -------------> 
-<div class="card">
+<div class="card" style="width:auto;">
       	<div class="card-body">
       <img src="https://vignette.wikia.nocookie.net/great-characters/images/8/8a/8481862A-EC6E-41F8-A573-CCA2C5BC1B80.png" alt="mdo" class="rounded-circle" style="float:left;" width="32" height="32"> <p class="fst-italic fw-bold text-sm-start">Ichibans bajstoa - 24 Januari 19:28</p>
 
@@ -217,7 +214,7 @@
 
 </div>
 <!--------Third sections --------->
- <div class="col-4">
+ <div class="col-md-auto">
     <div class="card">
       <div class="card-body">
         <h5 class="card-title">Live matcher just nu</h5>
@@ -231,11 +228,8 @@
 </div>
 <!----------End of third section------->
 <div class="one-vr"></div>
-<div class="one-divider"></div>
-
 <!-----------FOOTER----------->
-<div class="container">
-  <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+<footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top mt-auto">
     <div class="col-md-4 d-flex align-items-center">
       <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
         <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
@@ -249,7 +243,7 @@
       <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"></use></svg></a></li>
     </ul>
   </footer>
-</div>
+<!-----------End of FOOTER----------->
     <script src="/docs/5.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
   </body>
 </html>

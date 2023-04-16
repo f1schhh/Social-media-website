@@ -20,7 +20,7 @@
 </nav>
 
 <!-- Container -->
-<div class="container-xxl">
+<div class="container-xxl d-flex flex-column min-vh-100">
   <div class="profile-banner" style="background-image:url('https://orig00.deviantart.net/aa5f/f/2015/001/f/6/leicester_city_2015_wallpaper_by_shangeeth_sugumar_by_shangeeths-d8c4rz7.jpg')"></div>
     <div class="row">
       <div class="col-md-3 profile-picture-container" style="float:right">
@@ -85,7 +85,6 @@
       <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"></use></svg></a></li>
     </ul>
   </footer>
-
 <!-----------End of FOOTER----------->
 </body>
 </html>

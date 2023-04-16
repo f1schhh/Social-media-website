@@ -75,7 +75,7 @@
 <!----- Post 3 -------------> 
 <div class="card" style="width:auto;">
       	<div class="card-body">
-      <img src="https://vignette.wikia.nocookie.net/great-characters/images/8/8a/8481862A-EC6E-41F8-A573-CCA2C5BC1B80.png" alt="mdo" class="rounded-circle" style="float:left;" width="32" height="32"> <p class="fst-italic fw-bold text-sm-start">Ichiban - 16 April 19:28</p>
+      <img src="https://vignette.wikia.nocookie.net/great-characters/images/8/8a/8481862A-EC6E-41F8-A573-CCA2C5BC1B80.png" alt="mdo" class="rounded-circle" style="float:left;" width="32" height="32"> <p class="fst-italic fw-bold text-sm-start">aa - 16 April 19:28</p>
 
       <p class="text-start">
       	Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
@@ -109,7 +109,7 @@
 <!----- Post 4 -------------> 
 <div class="card">
         <div class="card-body">
-      <img src="https://vignette.wikia.nocookie.net/great-characters/images/8/8a/8481862A-EC6E-41F8-A573-CCA2C5BC1B80.png" alt="mdo" class="rounded-circle" style="float:left;" width="32" height="32"> <p class="fst-italic fw-bold text-sm-start">Ichibans bajstoa - 16 April 19:28</p>
+      <img src="https://vignette.wikia.nocookie.net/great-characters/images/8/8a/8481862A-EC6E-41F8-A573-CCA2C5BC1B80.png" alt="mdo" class="rounded-circle" style="float:left;" width="32" height="32"> <p class="fst-italic fw-bold text-sm-start">Hej hej - 16 April 19:28</p>
 
       <p class="text-start">
 

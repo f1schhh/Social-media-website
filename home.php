@@ -38,7 +38,7 @@
 </div>
     </div>
     <div class="col-md-10 content-center">
-    <button class="btn btn-primary btn-sm" style="float:right;">Posta ett inlägg</button>
+    <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#postmodal" onclick="$('#postmodal').modal('show');" style="float:right;">Posta ett inlägg</button>
       <h4>Inlägg</h4>
       <div class="card">
       	<div class="card-body">
@@ -56,13 +56,10 @@
 <div class="card">
       	<div class="card-body">
       <img src="https://vignette.wikia.nocookie.net/great-characters/images/8/8a/8481862A-EC6E-41F8-A573-CCA2C5BC1B80.png" alt="mdo" class="rounded-circle" style="float:left;" width="32" height="32"> <p class="fst-italic fw-bold text-sm-start">@king</p>
-
       <p class="text-start">kapapapow</p>
-
       <div class="embed-responsive embed-responsive-16by9">  
           <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/D-UmfqFjpl0" allowfullscreen></iframe>
       </div>
-
       <div class="mb-6">
       <label for="exampleFormControlTextarea1" class="form-label"></label>
        <textarea class="form-control form-control-sm" id="exampleFormControlTextarea1" rows="1" cols="2" placeholder="Kommentera..."></textarea>
@@ -121,7 +118,6 @@
       <label for="example" class="form-label"></label>
        <textarea class="form-control form-control-sm" id="example" rows="1" cols="2" placeholder="Kommentera..."></textarea>
        <input type="submit" class="btn btn-primary btn-sm" style="margin-top: 5px;" value="Kommentera" />
-   </p>
 </div>
 </div>
 </div>
@@ -167,7 +163,6 @@
       <label for="exampleFormControlTextarea1" class="form-label"></label>
        <textarea class="form-control form-control-sm" id="exampleFormControlTextarea1" rows="1" cols="2" placeholder="Kommentera..."></textarea>
        <input type="submit" class="btn btn-primary btn-sm" style="margin-top: 5px;" value="Kommentera" />
-   </p>
 </div>
 </div>
 </div>
@@ -189,6 +184,36 @@
     </ul>
   </footer>
 <!-----------End of FOOTER----------->
+
+<!----Modals---->
+
+<div class="modal fade" tabindex="-1" id="postmodal" >
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Posta ett inlägg</h5>
+        <button type="button" class="btn-close bg-light color-white" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+  <div class="mb-3">
+    <label for="textforpost" class="form-label">Text*</label>
+    <textarea class="form-control form-control-sm" id="posttext" rows="13" cols="3" placeholder="Text..."></textarea>
+  </div>
+  <div class="mb-3">
+  <label class="form-label">Bild/GIF(Alternativt)</label>
+  <input type="file" class="form-control" id="inputGroupFile01">
+</div>
+  <div class="mb-3">
+    <label for="Youtubevideo" class="form-label">Youtube video(alternativt)</label>
+    <input type="text" class="form-control" id="Youtubevideo" placeholder="Länk...">
+  </div>
+  <button type="submit" class="btn btn-primary">Lägg upp</button>
+</form>
+      </div>
+    </div>
+  </div>
+</div>
 <!---- Javascript filer ----->
 <?php echo $wconf->jsfiles; ?>
 </body>

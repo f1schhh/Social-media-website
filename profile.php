@@ -23,7 +23,7 @@
 <div class="container-xxl d-flex flex-column min-vh-100">
   <div class="profile-banner" style="background-image:url('https://orig00.deviantart.net/aa5f/f/2015/001/f/6/leicester_city_2015_wallpaper_by_shangeeth_sugumar_by_shangeeths-d8c4rz7.jpg')"></div>
     <div class="row">
-      <div class="col-md-3 profile-picture-container" style="float:right">
+      <div class="col-md-3 profile-picture-container">
   <img src="https://foxesofleicester.com/wp-content/uploads/getty-images/2017/07/1196389614.jpeg" class="rounded-circle mb-3" alt="Profile picture" style="width: 12rem; height: 12rem;">
   <h2>@yoshe</h2>
   <h4>Adam Fischer</h4>

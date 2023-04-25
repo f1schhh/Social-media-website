@@ -6,15 +6,17 @@ class WebsiteConf{
 
 	public $metatags = '
 	<meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="Social media">
     <meta name="author" content="Adam Fischer">
 	';
 	public $cssfiles = '<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <link href="css/mainstyle.css" rel="stylesheet" />
       <!-- Dark mode styles -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.4.1/darkly/bootstrap.min.css">';
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.4.1/darkly/bootstrap.min.css">
+      <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    ';
 	public $incsvgs = '
 <!------ SVGS------->
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
@@ -49,11 +51,11 @@ public $navbar = '<div class="collapse navbar-collapse" id="navbarSupportedConte
         <input class="form-control me-2" type="search" placeholder="Sök" aria-label="Search">
         <button class="btn bg-primary text-white" type="submit">Sök</button>
       </form>
+      <a href="loguout.php"><button class="btn bg-danger text-white" style="margin-left:0.2rem;">Logga ut</button></a>
     </div>';
 
     public $jsfiles = '
 
-    
     ';
 
 }

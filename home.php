@@ -11,7 +11,8 @@
 <!----- MENYBAR ------>
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#"><?php echo $wconf->websitename; ?></a>
+    <img src="img/icons/favicon-32x32.png" style="float:left;" /> 
+    <a class="navbar-brand ml-2" href="home.php"><?php echo $wconf->websitename; ?></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -31,7 +32,7 @@
    </div>
 <div class="list-group list-group-flush">
   <a href="#" class="list-group-item list-group-item-action">Inkorg</a>
-  <a href="#" class="list-group-item list-group-item-action">Inställningar</a>
+  <a href="#" class="list-group-item list-group-item-action" data-toggle="modal" data-target="#settingsmodal" onclick="$('#settingsmodal').modal('show');">Inställningar</a>
   <a href="profile.php" class="list-group-item list-group-item-action"> Min profil</a>
   <a href="#" class="list-group-item list-group-item-action">Mina grupper</a>
 </div>
@@ -173,20 +174,17 @@
 <!-----------FOOTER----------->
 <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top mt-auto">
     <div class="col-md-4 d-flex align-items-center">
-      <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
-        <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
-      </a>
+      <span class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+         <img src="img/icons/favicon-32x32.png" />
+      </span>
       <span class="mb-3 mb-md-0 text-muted">© <?php echo $wconf->websitename; ?> </span>
     </div>
-
-    <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-      <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"></use></svg></a></li>
-    </ul>
   </footer>
 <!-----------End of FOOTER----------->
 
 <!----Modals---->
 
+<!---- Post ------>
 <div class="modal fade" tabindex="-1" id="postmodal" >
   <div class="modal-dialog">
     <div class="modal-content">
@@ -209,6 +207,35 @@
     <input type="text" class="form-control" id="Youtubevideo" placeholder="Länk...">
   </div>
   <button type="submit" class="btn btn-primary">Lägg upp</button>
+</form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!---- Settings modal ----->
+<div class="modal fade" tabindex="-1" id="settingsmodal" >
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Inställningar</h5>
+        <button type="button" class="btn-close bg-light color-white" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+  <div class="mb-3">
+    <label for="textforpost" class="form-label">Om dig</label>
+    <textarea class="form-control form-control-sm" id="posttext" rows="13" cols="3" placeholder="Text..."></textarea>
+  </div>
+  <div class="mb-3">
+  <label class="form-label">Profil bild</label>
+  <input type="file" class="form-control" id="inputGroupFile01">
+</div>
+  <div class="mb-3">
+    <label for="Youtubevideo" class="form-label">Profil banner</label>
+    <input type="file" class="form-control" id="inputGroupFile01">
+  </div>
+  <button type="submit" class="btn btn-primary">Spara</button>
 </form>
       </div>
     </div>

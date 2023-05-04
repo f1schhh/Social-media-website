@@ -2,13 +2,23 @@
 
 class WebsiteConf{
 
-	public $websitename = "Asocial";
+	public $websitename = "FriendBook";
+	public $websiteurl = "http://localhost";
 
 	public $metatags = '
 	<meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Social media">
+    <meta name="keywords" content="social media, vänner, familj">
+    <meta name="description" content="Socialt nätverk för vänner och familj">
     <meta name="author" content="Adam Fischer">
+    <link rel="canonical" href="https://www.FriendBook.se">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href=img/icons/favicon-16x16.png">
+    <link rel="shortcut icon" href="img/icons/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="img/icons/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="img/icons/android-chrome-512x512.png">
+
 	';
 	public $cssfiles = '<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link href="css/mainstyle.css" rel="stylesheet" />

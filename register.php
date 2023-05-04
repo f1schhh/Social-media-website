@@ -13,7 +13,7 @@
   <div class="col-md-5">
   <div class="card-group">
   <div class="card">
-    <img class="card-img-top" src="img/launchimg.jpg" alt="Login image">
+    <img class="card-img-top" src="<?php echo $wconf->websiteurl; ?>/v1/img/launchimg.jpg" alt="Login image">
     <div class="card-body">
       <h5 class="card-title">Information och regler</h5>
       <p class="card-text">Innan du loggar in på vår plattform, vänligen läs igenom följande information och regler:<br /><br />
@@ -35,36 +35,47 @@ Vi tackar dig för att du valt att använda vår plattform och hoppas att du kom
 </div>
 <div class="col-md-6">
 <div class="card-group mt-3">
-  <div class="card">   
-  <?php
+  <div class="card">
+    <?php
+  @$username = $_POST['username'];
+  @$firstname = $_POST['first_name'];
+  @$lastname = $_POST['last_name'];
   @$email = $_POST['email'];
   @$password = $_POST['password'];
-  @$loginbtn = $_POST['loginbtn'];
+  @$regbtn = $_POST['regbtn'];
 
-  if(isset($loginbtn)){
-    if($email && $password){
+  if(isset($regbtn)){
+    if($email && $username && $password){
       echo '<span class="p-3">';
-      $login->loginUser($email,$password);
+      $login->createUser($firstname,$lastname, $username, $email, $password);
       echo '</span>';
     }
   }
   ?>
-<form class="px-3 p-3" action="login.php" method="POST">
+<form class="px-3 p-3" action="register.php" method="POST">
   <div class="form-group">
-    <label for="exampleInputEmail1">Email/användarnamn</label>
-    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="email" required="" placeholder="Ange email/användaramn">
+    <label for="first_nameid">Förnamn(alternativt)</label>
+    <input type="text" class="form-control" id="first_nameid" aria-describedby="" name="first_name" placeholder="Ange förnamn">
   </div>
   <div class="form-group">
-    <label for="exampleInputPassword1">Lösenord</label>
-    <input type="password" class="form-control" id="exampleInputPassword1" name="password" required="" placeholder="Lösenord">
+    <label for="last_nameid">Efternamn(alternativt)</label>
+    <input type="text" class="form-control" id="last_nameid" aria-describedby="" name="last_name" placeholder="Ange efternamn">
   </div>
-  <div class="form-check">
-    <input type="checkbox" class="form-check-input">
-    <label class="form-check-label">Håll mig inloggad</label>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Användarnamn*</label>
+    <input type="username" class="form-control" id="exampleInputEmail1" name="username" aria-describedby="emailHelp" placeholder="Ange användarnamn">
   </div>
-  <input type="submit" class="btn btn-primary" name="loginbtn" value="Logga in" />
+  <div class="form-group">
+    <label for="exampleInputEmail1">Email*</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" name="email" aria-describedby="emailHelp" placeholder="Ange email">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Lösenord*</label>
+    <input type="password" class="form-control" id="exampleInputPassword1" name="password" placeholder="Lösenord">
+  </div>
+  <input type="submit" class="btn btn-primary" name="regbtn" value="Registrera" />
   <br /><br />
-  <p>Har du inget konto? Klicka <a href="register.php">här</a> för att registera dig</p>
+  <p>Har du redan ett konto? Klicka <a href="login.php">här</a> för att logga in</p>
 </form>
 </div>
 </div>

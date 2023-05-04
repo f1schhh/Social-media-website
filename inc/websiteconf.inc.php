@@ -13,7 +13,7 @@ class WebsiteConf{
     <meta name="author" content="Adam Fischer">
     <link rel="canonical" href="https://www.FriendBook.se">
     <link rel="icon" type="image/png" sizes="32x32" href="img/icons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href=img/icons/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/icons/favicon-16x16.png">
     <link rel="shortcut icon" href="img/icons/favicon.ico">
     <link rel="apple-touch-icon" sizes="180x180" href="img/icons/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="192x192"  href="img/icons/android-chrome-192x192.png">

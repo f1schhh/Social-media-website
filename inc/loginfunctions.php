@@ -73,7 +73,7 @@ class Login extends DB{
 		$this->pswd1 = $this->db->secret($password1);
 		$regdatum = date("Y-m-d");
 		$last_datum = date("Y-m-d H:i:s");
-		$profileimg = "";
+		$profileimg = "img/noprofile.png";
 		$profilebanner = "";
 		$about = "";
 
@@ -102,6 +102,72 @@ class Login extends DB{
 
 			}
 
+		}
+
+	}
+
+    
+    private $user_session;
+
+	public function DefaultCheckOnline($usersession){
+
+		$this->db->connect();
+
+		$this->user_session = $this->db->secret($usersession);
+
+		$checkuser = $this->db->prepare("SELECT * FROM users WHERE username = ? OR email = ?");
+		$checkuser->bind_Param("ss", $this->user_session, $this->user_session);
+		$checkuser->execute();
+		$checkuser->store_result();
+
+		if($checkuser->num_rows == 1){
+			header("location: home.php");
+		}else{
+			
+		}
+
+
+	}
+	 
+	private $user_sessionindex;
+
+	public function IndexCheckOnline($usersession){
+
+		$this->db->connect();
+
+		$this->user_sessionindex = $this->db->secret($usersession);
+
+		$checkuser = $this->db->prepare("SELECT * FROM users WHERE username = ? OR email = ?");
+		$checkuser->bind_Param("ss", $this->user_sessionindex, $this->user_sessionindex);
+		$checkuser->execute();
+		$checkuser->store_result();
+
+		if($checkuser->num_rows == 1){
+			header("location: home.php");
+		}else{
+			header("location:login.php");
+		}
+
+
+	}
+
+	 private $user;
+
+	public function NotLoggedIn($user){
+
+		$this->db->connect();
+
+		$this->user = $this->db->secret($user);
+
+		$checkuser = $this->db->prepare("SELECT * FROM users WHERE username = ? OR email = ?");
+		$checkuser->bind_Param("ss", $this->user, $this->user);
+		$checkuser->execute();
+		$checkuser->store_result();
+
+		if($checkuser->num_rows == 1){
+
+		}else{
+			header("location: login.php");
 		}
 
 

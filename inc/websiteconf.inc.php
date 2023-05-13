@@ -21,14 +21,17 @@ class WebsiteConf{
 
 	';
 	public $cssfiles = '<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link href="css/mainstyle.css" rel="stylesheet" />
+    <link href="css/mainstyle.css" rel="stylesheet">
       <!-- Dark mode styles -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.4.1/darkly/bootstrap.min.css">
-      <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <link rel="stylesheet" href="css/lightbox.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <script src="js/lightbox.js"></script>
     ';
 	public $incsvgs = '
-<!------ SVGS------->
+<!--- SVGS --->
+
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
   <symbol id="bootstrap" viewBox="0 0 118 94">
     <title>Bootstrap</title>
@@ -61,11 +64,10 @@ public $navbar = '<div class="collapse navbar-collapse" id="navbarSupportedConte
         <input class="form-control me-2" type="search" placeholder="Sök" aria-label="Search">
         <button class="btn bg-primary text-white" type="submit">Sök</button>
       </form>
-      <a href="loguout.php"><button class="btn bg-danger text-white" style="margin-left:0.2rem;">Logga ut</button></a>
+      <a href="logout.php" class="btn bg-danger text-white logoutbtn" style="margin-left:0.2rem;">Logga ut</a>
     </div>';
 
     public $jsfiles = '
-
     ';
 
 }

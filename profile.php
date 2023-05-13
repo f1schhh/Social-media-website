@@ -1,4 +1,6 @@
-<?php require_once('inc/main.inc.php'); ?>
+<?php require_once('inc/main.inc.php'); 
+$login->NotLoggedIn($_SESSION['useractive']);
+?>
 <!doctype html>
 <html lang="sv">
   <head>
